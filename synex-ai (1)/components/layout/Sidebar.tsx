@@ -1,3 +1,4 @@
+import SynexLogo from '../../../assets/synex.png';
 import React from 'react';
 import { ViewState } from '../../types';
 import { 
@@ -64,14 +65,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, setView, onLogout
   return (
     <aside className="w-[280px] h-screen bg-[#020617]/90 backdrop-blur-xl border-r border-white/5 flex flex-col fixed left-0 top-0 z-50">
       {/* Brand */}
-      <div className="p-6">
-        <div className="flex items-center gap-3">
-          <div className="relative group">
-              <div className="absolute inset-0 bg-indigo-500/50 blur-lg rounded-full opacity-0 group-hover:opacity-50 transition-opacity" />
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg relative z-10">
-                  <Command className="w-5 h-5 text-white" />
-              </div>
-          </div>
+     <div className="relative group">
+              {/* Logo Image yahan hai */}
+              <img 
+                  src={SynexLogo} 
+                  alt="Synex AI Logo" 
+                  className="w-8 h-8 rounded-lg shadow-lg relative z-10" 
+              />
+          </div>
           <div>
               <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400 tracking-tight font-display">
                Synex AI
