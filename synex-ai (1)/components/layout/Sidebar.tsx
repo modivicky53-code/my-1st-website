@@ -1,4 +1,4 @@
-import SynexLogo from '../../../assets/synex.png'; // 👈 Aapki logo file yahan se import ho rahi hai
+import SynexLogo from '../../assets/synex.png'; 👈 Aapki logo file yahan se import ho rahi hai
 import React from 'react';
 import { ViewState } from '../../types';
 import { 
