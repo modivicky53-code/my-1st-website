@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Play, Sparkles, RefreshCw, Save, Terminal } from 'lucide-react';
 import { Button } from '../ui/Button';
-import { runPrompt, optimizePrompt } from '../../services/geminiService';
 
 export const Playground: React.FC = () => {
   const [prompt, setPrompt] = useState('Write a haiku about artificial intelligence.');
