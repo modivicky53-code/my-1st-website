@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '../ui/Button';
-import { optimizePrompt, generateTags } from '../../services/geminiService';
+
 import { Wand2, Save, RefreshCw } from 'lucide-react';
 
 export const CreatePrompt: React.FC = () => {
